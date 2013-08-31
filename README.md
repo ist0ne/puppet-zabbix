@@ -45,7 +45,7 @@ Installs the zabbix server package.
 Installs the zabbix frontend package.
 
     class { 'zabbix::web':
-         server_name => 'zabbix.leju.com',
+         server_name => 'zabbix.sample.com',
          php_value_date_timezone => 'Asia/Shanghai',
     }
 
@@ -65,6 +65,6 @@ Use hiera: /etc/puppet/hieradata/node/zabbix.sample.com.yaml
     zabbix::server::db_type: 'mysql'
     zabbix::server::db_password: 'zabbixpwd'
     
-    zabbix::web::server_name: 'zabbix.leju.com'
+    zabbix::web::server_name: 'zabbix.sample.com'
     zabbix::web::php_value_date_timezone: 'Asia/Shanghai'
 

@@ -17,7 +17,7 @@
 # zabbix::server::db_type: 'mysql'
 # zabbix::server::db_password: 'zabbixpwd'
 #
-# zabbix::web::server_name: 'zabbix.leju.com'
+# zabbix::web::server_name: 'zabbix.sample.com'
 # zabbix::web::php_value_date_timezone: 'Asia/Shanghai'
 #
 class zabbix {
