@@ -29,7 +29,7 @@ This module uses the fact osfamily which is supported by Facter 1.6.1+. If you d
       }
     }
 
-This module depends on the [puppetlabs-stdlib](https://github.com/puppetlabs/puppetlabs-stdlib)and [puppetlabs-mysql](https://github.com/puppetlabs/puppetlabs-mysql).
+This module depends on the [puppetlabs-stdlib](https://github.com/puppetlabs/puppetlabs-stdlib) and [puppetlabs-mysql](https://github.com/puppetlabs/puppetlabs-mysql).
 
 ## Usage
 
