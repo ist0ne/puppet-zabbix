@@ -1,7 +1,7 @@
 # Class: zabbix::agent
 #
 # manages the installation of the zabbix agent.  manages the package, service,
-# zabbix_agentd.conf
+# zabbix_agent.conf
 #
 # Parameters:
 #
