@@ -33,7 +33,6 @@ This module depends on the [puppetlabs-stdlib](https://github.com/puppetlabs/pup
 
 ## Usage
 
-### zabbix server
 Installs the zabbix server package.
 
     class { 'zabbix::server':
