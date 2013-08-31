@@ -42,6 +42,10 @@ class zabbix::agent (
   validate_string($service_ensure)
   validate_bool($service_manage)
   validate_string($service_name)
+  validate_string($source_ip)
+  validate_string($zabbix_server)
+  validate_string($listen_port)
+  validate_string($listen_ip)
 
   include '::zabbix::agent::install'
   include '::zabbix::agent::config'

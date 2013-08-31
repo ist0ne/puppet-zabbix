@@ -38,6 +38,13 @@ class zabbix::web (
   validate_string($config_template)
   validate_re($package_ensure, [present, installed, absent, purged, held, latest])
   validate_array($package_name)
+  validate_bool($service_enable)
+  validate_string($service_ensure)
+  validate_bool($service_manage)
+  validate_string($service_name)
+  validate_string($server_name)
+  validate_string($host_allow)
+  validate_string($php_value_date_timezone)
 
   include '::zabbix::web::install'
   include '::zabbix::web::config'
