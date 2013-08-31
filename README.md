@@ -36,8 +36,8 @@ This module depends on the [puppetlabs-stdlib](https://github.com/puppetlabs/pup
 Installs the zabbix server package.
 
     class { 'zabbix::server':
-        source_ip => '10.10.10.53',
-        listen_ip => '10.10.10.53',
+        source_ip => '10.10.10.11',
+        listen_ip => '10.10.10.11',
         db_type => 'mysql',
         db_password => 'zabbixpwd',
     }
@@ -52,9 +52,9 @@ Installs the zabbix frontend package.
 Installs the zabbix agent package.
 
     class { 'zabbix::agent':
-        source_ip => '10.10.10.53',
-        zabbix_server => '10.10.10.53',
-        listen_ip => '10.10.10.53',
+        source_ip => '10.10.10.11',
+        zabbix_server => '10.10.10.11',
+        listen_ip => '10.10.10.11',
     }
 
 Use hiera: /etc/puppet/hieradata/node/zabbix.sample.com.yaml
