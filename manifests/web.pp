@@ -16,22 +16,22 @@
 #    }
 #
 class zabbix::web (
-  $config            = $zabbix::params::web_config,
-  $config_template   = $zabbix::params::web_config_template,
-  $package_ensure    = $zabbix::params::web_package_ensure,
-  $package_name      = $zabbix::params::web_package_name,
-  $service_enable    = $zabbix::params::web_service_enable,
-  $service_ensure    = $zabbix::params::web_service_ensure,
-  $service_manage    = $zabbix::params::web_service_manage,
-  $service_name      = $zabbix::params::web_service_name,
-  $server_name = $zabbix::params::server_name,
-  $host_allow = $zabbix::params::host_allow,
-  $php_value_max_execution_time = $zabbix::params::php_value_max_execution_time,
-  $php_value_memory_limit = $zabbix::params::php_value_memory_limit,
-  $php_value_post_max_size = $zabbix::params::php_value_post_max_size,
+  $config                        = $zabbix::params::web_config,
+  $config_template               = $zabbix::params::web_config_template,
+  $package_ensure                = $zabbix::params::web_package_ensure,
+  $package_name                  = $zabbix::params::web_package_name,
+  $service_enable                = $zabbix::params::web_service_enable,
+  $service_ensure                = $zabbix::params::web_service_ensure,
+  $service_manage                = $zabbix::params::web_service_manage,
+  $service_name                  = $zabbix::params::web_service_name,
+  $server_name                   = $zabbix::params::server_name,
+  $host_allow                    = $zabbix::params::host_allow,
+  $php_value_max_execution_time  = $zabbix::params::php_value_max_execution_time,
+  $php_value_memory_limit        = $zabbix::params::php_value_memory_limit,
+  $php_value_post_max_size       = $zabbix::params::php_value_post_max_size,
   $php_value_upload_max_filesize = $zabbix::params::php_value_upload_max_filesize,
-  $php_value_max_input_time = $zabbix::params::php_value_max_input_time,
-  $php_value_date_timezone = $zabbix::params::php_value_date_timezone,
+  $php_value_max_input_time      = $zabbix::params::php_value_max_input_time,
+  $php_value_date_timezone       = $zabbix::params::php_value_date_timezone
 ) inherits zabbix::params {
 
   validate_absolute_path($config)

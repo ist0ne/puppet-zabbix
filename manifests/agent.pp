@@ -12,26 +12,26 @@
 # Sample Usage:
 #
 #    class { 'zabbix::agent':
-#        source_ip => '10.10.10.11',
+#        source_ip     => '10.10.10.11',
 #        zabbix_server => '10.10.10.11',
-#        listen_ip => '10.10.10.11',
+#        listen_ip     => '10.10.10.11',
 #    }
 #
 class zabbix::agent (
-  $config            = $zabbix::params::agent_config,
-  $config_template   = $zabbix::params::agent_config_template,
-  $package_ensure    = $zabbix::params::agent_package_ensure,
-  $package_name      = $zabbix::params::agent_package_name,
-  $service_enable    = $zabbix::params::agent_service_enable,
-  $service_ensure    = $zabbix::params::agent_service_ensure,
-  $service_manage    = $zabbix::params::agent_service_manage,
-  $service_name      = $zabbix::params::agent_service_name,
-  $source_ip = $zabbix::params::agent_source_ip,
-  $enable_remote_commands = $zabbix::params::enable_remote_commands,
-  $log_remote_commands = $zabbix::params::log_remote_commands,
-  $zabbix_server = $zabbix::params::zabbix_server,
-  $listen_port = $zabbix::params::agent_listen_port,
-  $listen_ip = $zabbix::params::agent_listen_ip
+  $config                 = $zabbix::params::agent_config,
+  $config_template        = $zabbix::params::agent_config_template,
+  $package_ensure         = $zabbix::params::agent_package_ensure,
+  $package_name           = $zabbix::params::agent_package_name,
+  $service_enable         = $zabbix::params::agent_service_enable,
+  $service_ensure         = $zabbix::params::agent_service_ensure,
+  $service_manage         = $zabbix::params::agent_service_manage,
+  $service_name           = $zabbix::params::agent_service_name,
+  $source_ip              = $zabbix::params::agent_source_ip,
+  $enable_remote_commands = $zabbix::params::agent_remote_commands,
+  $log_remote_commands    = $zabbix::params::agent_log_remote_commands,
+  $zabbix_server          = $zabbix::params::agent_zabbix_server,
+  $listen_port            = $zabbix::params::agent_listen_port,
+  $listen_ip              = $zabbix::params::agent_listen_ip
 ) inherits zabbix::params {
 
   validate_absolute_path($config)

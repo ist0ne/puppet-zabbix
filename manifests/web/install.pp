@@ -4,8 +4,8 @@ class zabbix::web::install {
   $package_ensure = $zabbix::web::package_ensure
 
   package { 'zabbix_web':
-    ensure  => $package_ensure,
-    name    => $package_name,
+    ensure => $package_ensure,
+    name   => $package_name,
   }
 
 }
